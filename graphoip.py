@@ -29,7 +29,7 @@ g.setup(4, g.IN)
 def adc():
     b = 0
     n = 0 #количество измерений
-    while b < 100:
+    while b < 250:
         ar = [0, 0, 0, 0, 0, 0, 0, 0]
         b = 0
         c = 0
@@ -51,7 +51,7 @@ def adc():
         n += 1
         #print(ar)
     g.output(troykaModule, 0)
-    while b > 50:
+    while b > 5:
         ar = [0, 0, 0, 0, 0, 0, 0, 0]
         b = 0
         c = 0
